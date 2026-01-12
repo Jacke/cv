@@ -4,7 +4,7 @@
       "updated_at": "2026-01-11T21:57:15",
       "doc_url": "https://docs.google.com/document/d/1v6w66RXuq4xVqQM1ZBGuB0siSLS7K3Betk_oHxvxG98/edit?tab=t.0",
       "doc_id": "1v6w66RXuq4xVqQM1ZBGuB0siSLS7K3Betk_oHxvxG98",
-      "data_path": "templates/cv.replacements.stanislav_sobolev.json",
+      "data_path": "cv_components/cv.replacements.stanislav_sobolev.json",
       "replacements": {
         "{{fullname}}": "Stanislav Sobolev",
         "{{title}}": "Senior Go Developer",
@@ -48,7 +48,7 @@
       "updated_at": "2026-01-10T02:51:59",
       "doc_url": "https://docs.google.com/document/d/1PZXfFJ9h9M5w5lhOpAqW3KuvfieR3jvLXH0_xv57thc/edit",
       "doc_id": "1PZXfFJ9h9M5w5lhOpAqW3KuvfieR3jvLXH0_xv57thc",
-      "data_path": "templates/cv.replacements.stanislav_sobolev.json",
+      "data_path": "cv_components/cv.replacements.stanislav_sobolev.json",
       "replacements": {
         "{{fullname}}": "Stanislav Sobolev",
         "{{title}}": "Senior Go Developer",
@@ -92,7 +92,7 @@
       "updated_at": "2026-01-10T02:54:28",
       "doc_url": "https://docs.google.com/document/d/1m2K6fDUkijzAVLerjl06yjmjeRMDexPBfyTqrb5W2xI/edit",
       "doc_id": "1m2K6fDUkijzAVLerjl06yjmjeRMDexPBfyTqrb5W2xI",
-      "data_path": "templates/cv.replacements.stanislav_sobolev.json",
+      "data_path": "cv_components/cv.replacements.stanislav_sobolev.json",
       "replacements": {
         "{{fullname}}": "Stanislav Sobolev",
         "{{title}}": "Senior Go Developer",

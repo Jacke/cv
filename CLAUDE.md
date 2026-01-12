@@ -10,10 +10,10 @@ Personal CV management and automation tool that applies structured CV data to Go
 
 ```bash
 # Apply CV to Google Doc
-python scripts/cv_structured_apply_refactored.py --data templates/cv.hard_skills.en.json --doc "Resume"
+python scripts/cv_structured_apply_refactored.py --data cv_components/cv.hard_skills.en.json --doc "Resume"
 
 # Apply with Russian labels
-python scripts/cv_structured_apply_refactored.py --data templates/cv.default.ru.json --lang ru --doc "Resume"
+python scripts/cv_structured_apply_refactored.py --data cv_components/cv.default.ru.json --lang ru --doc "Resume"
 
 # Dry run (preview without changes)
 python scripts/cv_structured_apply_refactored.py --data cv.json --doc "Resume" --dry-run
@@ -27,7 +27,7 @@ python scripts/cv_apply/test_formatters.py
 
 ## CV Profiles
 
-Available CV profiles in `templates/`:
+Available CV profiles in `cv_components/`:
 
 | Profile | EN | RU |
 |---------|----|----|
@@ -63,7 +63,7 @@ CV JSON Data → formatters.py (transform sections)
 ## Key Files
 
 - `docs/resources/GOOGLE_DOCS_LINKS.md` - Document registry mapping names to URLs
-- `templates/cv.replacements.*.json` - CV data files
+- `cv_components/cv.*.json` - CV data files (profiles)
 - `.cv_apply_state.json` - State tracking for reset operations
 - `.secrets/` - OAuth credentials (gitignored)
 - `scripts/gdocs_cli.py` - Low-level Google Docs API wrapper (1,654 lines)

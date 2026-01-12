@@ -1,3 +1,16 @@
+# Curriculum Vitae
+*Tempora mutantur, et nos mutamur in illis.*
+
+<p align="center">
+  <img src="./logo.png" alt="CV Apply Logo" width="720"/>
+</p>
+
+**English:** Times change, and we change with them.  
+**Русский:** Времена меняются, и мы меняемся вместе с ними.  
+**한국어:** 시간은 흐르고 우리도 그 속에서 변해간다.
+
+---
+
 # CV Apply Package
 
 Модульная система для применения структурированных CV данных к шаблонам Google Docs.
@@ -73,41 +86,3 @@ CLI утилиты для взаимодействия с gdocs_cli:
 
 # Dry run (без изменения документа)
 ./cv_structured_apply_refactored.py --data data/cv.json --doc "CV Template" --dry-run
-```
-
-### Программное использование
-
-```python
-from cv_apply.formatters import build_replacements
-from cv_apply.utils import read_json
-
-# Загрузить и отформатировать CV данные
-data = read_json("data/cv.json")
-replacements = build_replacements(data)
-
-# Использовать отдельные форматтеры
-from cv_apply.formatters import format_skills, format_experiences
-
-skills = format_skills(data)
-exps, entrepreneurship = format_experiences(data)
-```
-
-## Преимущества рефакторинга
-
-1. **Модульность**: Каждый модуль отвечает за конкретную функциональность
-2. **Переиспользуемость**: Функции можно использовать независимо
-3. **Тестируемость**: Легко писать unit-тесты для каждого модуля
-4. **Читаемость**: Код разбит на логические блоки
-5. **Поддерживаемость**: Легче находить и исправлять баги
-6. **Документированность**: Каждая функция имеет docstring
-
-## Миграция
-
-Старый скрипт `cv_structured_apply.py` остается без изменений для обратной совместимости.
-Новый рефакторенный скрипт доступен как `cv_structured_apply_refactored.py`.
-
-После тестирования можно заменить старый скрипт новым:
-```bash
-mv scripts/cv_structured_apply.py scripts/cv_structured_apply_old.py
-mv scripts/cv_structured_apply_refactored.py scripts/cv_structured_apply.py
-```
