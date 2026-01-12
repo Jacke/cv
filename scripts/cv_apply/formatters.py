@@ -3,6 +3,7 @@
 from typing import Any
 
 from .constants import SKILL_BULLET_MARKER, EXP_BULLET_MARKER
+from .translations import Lang, get_label
 from .utils import normalize_text, normalize_list, format_block
 
 
@@ -46,7 +47,7 @@ def is_entrepreneurship(item: dict[str, Any]) -> bool:
     return any(keyword in role for keyword in ["co-founder", "founder", "ceo", "cto"])
 
 
-def format_experience_block(item: dict[str, Any]) -> str:
+def format_experience_block(item: dict[str, Any], lang: Lang = "en") -> str:
     """Format a single experience block."""
     lines: list[str] = []
 
@@ -89,12 +90,12 @@ def format_experience_block(item: dict[str, Any]) -> str:
     # Technologies
     technologies = normalize_text(item.get("technologies")).strip()
     if technologies:
-        lines.append(f"Tech: {technologies}")
+        lines.append(f"{get_label('tech', lang)}: {technologies}")
 
     return format_block(lines)
 
 
-def format_experiences(data: dict[str, Any]) -> tuple[str, str]:
+def format_experiences(data: dict[str, Any], lang: Lang = "en") -> tuple[str, str]:
     """
     Format experience section, separating main experience and entrepreneurship.
 
@@ -116,13 +117,13 @@ def format_experiences(data: dict[str, Any]) -> tuple[str, str]:
 
     exp_lines: list[str] = []
     for item in main_items:
-        block = format_experience_block(item)
+        block = format_experience_block(item, lang)
         if block:
             exp_lines.append(block)
 
     ent_lines: list[str] = []
     for item in entrepreneurship_items:
-        block = format_experience_block(item)
+        block = format_experience_block(item, lang)
         if block:
             ent_lines.append(block)
 
@@ -172,37 +173,44 @@ def format_publications(data: dict[str, Any]) -> str:
     return format_block(lines)
 
 
-def build_replacements(data: dict[str, Any]) -> dict[str, str]:
+def build_replacements(data: dict[str, Any], lang: Lang = "en") -> dict[str, str]:
     """
     Build all placeholder replacements from CV data.
 
     Args:
         data: Structured CV data dictionary
+        lang: Language for labels ("en" or "ru")
 
     Returns:
         Dictionary mapping placeholder keys to replacement values
     """
     summary = format_summary(data)
     skills = format_skills(data)
-    exps, entrepreneurship = format_experiences(data)
+    exps, entrepreneurship = format_experiences(data, lang)
     education = format_education(data)
     publications = format_publications(data)
 
     header = data.get("header") or {}
     contact = header.get("contact") or {}
 
+    email = normalize_text(contact.get('email'))
+    github = normalize_text(contact.get('github'))
+    phone = normalize_text(contact.get('phone'))
+    availability = normalize_text(contact.get('availability'))
+    legal_entity = normalize_text(contact.get('legal_entity'))
+
     header_replacements = {
         "{{fullname}}": normalize_text(header.get("full_name")),
         "{{title}}": normalize_text(header.get("role_title")),
         "{{nickname}}": normalize_text(header.get("nickname")),
         "{{timezone}}": normalize_text(contact.get("timezone")),
-        "{{email}}": f"✉️ Email: {normalize_text(contact.get('email'))}".strip(),
-        "{{github}}": f"⚒️ Github: {normalize_text(contact.get('github'))}".strip(),
+        "{{email}}": f"{get_label('email', lang)}: {email}".strip() if email else "",
+        "{{github}}": f"{get_label('github', lang)}: {github}".strip() if github else "",
         "{{website}}": normalize_text(contact.get('website')),
         "{{tags}}": normalize_text(header.get("tags")),
-        "{{phone}}": f"📞 Phone: {normalize_text(contact.get('phone'))}".strip(),
-        "{{available_for}}": f"📖 Availability: {normalize_text(contact.get('availability'))}".strip(),
-        "{{legal_entity}}": f"💼 Legal entity: {normalize_text(contact.get('legal_entity'))}".strip(),
+        "{{phone}}": f"{get_label('phone', lang)}: {phone}".strip() if phone else "",
+        "{{available_for}}": f"{get_label('availability', lang)}: {availability}".strip() if availability else "",
+        "{{legal_entity}}": f"{get_label('legal_entity', lang)}: {legal_entity}".strip() if legal_entity else "",
     }
 
     return {

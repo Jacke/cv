@@ -1,0 +1,141 @@
+{
+  "header": {
+    "full_name": "Stanislav Sobolev",
+    "role_title": "Principal Go/Scala Engineer",
+    "nickname": "Stan",
+    "tags": "Principal, Distributed Systems, Architecture",
+    "stack": "Go, Scala, Java",
+    "contact": {
+      "timezone": "GMT+3",
+      "email": "iamjacke@gmail.com",
+      "github": "github.com/Jacke",
+      "phone": "",
+      "availability": "Remote/Full-time, Remote/Part-time",
+      "legal_entity": "UK LLC, Latvian LLC, Deel/Payoneer",
+      "location": "",
+      "english": ""
+    }
+  },
+  "summary": {
+    "paragraph": "Principal engineer with 10+ years building distributed systems at scale. Deep expertise in high-performance architectures, achieving sub-millisecond latencies and handling 60K+ concurrent sessions. Proven track record of reducing system latency by 10x and scaling platforms to 100K+ users.",
+    "about": ""
+  },
+  "key_skills_line": "Go, Scala, Java, Distributed Systems",
+  "skills": [
+    {
+      "title": "Distributed Systems & Architecture",
+      "bullets": [
+        "Designed microservices architectures with service discovery, configuration management, load balancing, and fault tolerance using Akka and ZIO.",
+        "Achieved sub-millisecond performance using Netty, Aeron, CassandraDB handling 60,000+ active sessions.",
+        "Built high-performance transport layers using GraphQL, gRPC (Protobuf), Apache Avro across Web, Mobile, and IoT stacks.",
+        "Implemented distributed load balancers reducing processing time from 2.5s to 30ms (83x improvement)."
+      ]
+    },
+    {
+      "title": "Performance Optimization",
+      "bullets": [
+        "Reduced latency from 500ms to 59ms through low-level optimization techniques.",
+        "Optimized cloud architecture improving response time by 100ms and reducing server usage 10x.",
+        "Designed architecture serving 15,000 DAU on a single server instance.",
+        "Orchestrated infrastructure for 100K+ users enabling 5x instance scaling via RAM optimization."
+      ]
+    },
+    {
+      "title": "Functional Programming & Type Systems",
+      "bullets": [
+        "Successfully migrated 7 projects and initiated 6 new projects within ZIO and Arrow ecosystems.",
+        "Enhanced code clarity, performance efficiency, and execution stability through FP paradigms.",
+        "Strong advocate for simplicity and minimalism in system design."
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Mvideo",
+      "dates": "06/2022 - Present",
+      "duration": "2 years",
+      "company_desc": "Leading retail company specializing in electronics and household appliances.",
+      "company_url": "https://mvideo.ru",
+      "role": "Principal Full-Stack Engineer",
+      "employment": "Full-time",
+      "bullets": [
+        "Architected and led development of a unified platform integrating 40,000 stores and 160,000 users from scratch.",
+        "Designed scalable backend architecture handling large data volumes with real-time processing and reporting capabilities.",
+        "Engineered complex SAP integration layer for data migration and synchronization across enterprise systems.",
+        "Implemented performance optimizations ensuring system reliability under peak retail loads."
+      ],
+      "technologies": "Scala, Java, PostgreSQL, Docker, REST API, Kubernetes (k8s), SAP"
+    },
+    {
+      "company": "EEG",
+      "dates": "07/2021 - 06/2023",
+      "duration": "2 years",
+      "company_desc": "Full-stack esports and online gambling company fueled by video gaming growth.",
+      "company_url": "https://www.eegpartners.com/",
+      "role": "Senior Scala Engineer",
+      "employment": "Full-time",
+      "bullets": [
+        "Elevated gambling platform from prototype to production with compliance requirements.",
+        "Implemented distributed load balancer achieving 83x performance improvement (2.5s → 30ms).",
+        "Built fraud-prevention ML model with 90%+ detection rate, reducing downtime by 50%.",
+        "Designed infrastructure reducing maintenance costs while improving change velocity."
+      ],
+      "technologies": "Scala, Akka, Kubernetes (k8s), PostgreSQL"
+    },
+    {
+      "company": "Tawasal",
+      "dates": "02/2020 - 06/2021",
+      "duration": "2 years",
+      "company_desc": "Popular messenger in the UAE and super app for rentals, food, and tickets.",
+      "company_url": "https://tawasal.ae/",
+      "role": "Senior Scala Engineer",
+      "employment": "Full-time",
+      "bullets": [
+        "Re-architected high-load messenger services for 100K+ concurrent users across 5 instances.",
+        "Increased performance via advanced RAM optimization and module interaction patterns.",
+        "Built SOA integration framework reducing integration development time from 1 month to 1.5 weeks.",
+        "Researched and integrated distributed cloud architecture increasing scalability 40% while reducing costs 50%."
+      ],
+      "technologies": "ZIO, Akka, F#, Nix, C++"
+    },
+    {
+      "company": "Yzer",
+      "dates": "08/2019 - 09/2020",
+      "duration": "1 year",
+      "company_desc": "Viral messenger in the UAE with automatic message translation features.",
+      "company_url": "https://appadvice.com/app/yzerchat-chat-and-video-calls/1398177737",
+      "role": "Senior Scala Consultant",
+      "employment": "Part-time",
+      "bullets": [
+        "Reduced latency from 500ms to 59ms through low-level protocol optimization.",
+        "Built high-load request model eliminating 50% of bottlenecks with performance visualization.",
+        "Optimized cloud architecture with on-prem tooling: 100ms response improvement, 10x server reduction.",
+        "Influenced scaling architecture optimizing budget by 3 months while sustaining 56,000 DAU."
+      ],
+      "technologies": "Scala, Java, Protobuf, Rust, WebAssembly"
+    },
+    {
+      "company": "Bolti",
+      "dates": "10/2018 - 08/2019",
+      "duration": "1 year",
+      "company_desc": "Messenger / Chat Bot Platform.",
+      "company_url": "",
+      "role": "Senior Scala Developer",
+      "employment": "Full-time",
+      "bullets": [
+        "Reverse-engineered Telegram's MTProto protocol implementing backend for multiple device targets.",
+        "Delivered 95% of Telegram's core functionality in the platform.",
+        "Designed efficient architecture serving 15,000 DAU on single server instance."
+      ],
+      "technologies": "Scala, ZIO, C++, Kubernetes (k8s), Babel"
+    }
+  ],
+  "education": {
+    "dates": "09/2011 - 05/2017",
+    "school": "Saint Petersburg State University (SPbU)",
+    "degree": "M.Sc. in Computer Science"
+  },
+  "extras": {
+    "hobbies": ""
+  }
+}

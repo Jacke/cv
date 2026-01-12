@@ -1,0 +1,159 @@
+{
+  "header": {
+    "full_name": "Stanislav Sobolev",
+    "role_title": "Engineering Manager / Tech Lead",
+    "nickname": "Stan",
+    "tags": "Leadership, Team Building, Strategy",
+    "stack": "Go, Scala, Java",
+    "contact": {
+      "timezone": "GMT+3",
+      "email": "iamjacke@gmail.com",
+      "github": "github.com/Jacke",
+      "phone": "",
+      "availability": "Remote/Full-time, Remote/Part-time",
+      "legal_entity": "UK LLC, Latvian LLC, Deel/Payoneer",
+      "location": "",
+      "english": ""
+    }
+  },
+  "summary": {
+    "paragraph": "Engineering leader with 10+ years of experience building and scaling technical teams. Proven ability to transform prototypes into production systems, mentor engineers, and drive cross-functional initiatives. Founded and led multiple startups, combining technical excellence with strategic business acumen.",
+    "about": ""
+  },
+  "key_skills_line": "Team Leadership, Technical Strategy, Mentoring",
+  "skills": [
+    {
+      "title": "Leadership & Team Building",
+      "bullets": [
+        "Recruited, mentored, and led engineering teams up to 7 developers, achieving 35% faster delivery.",
+        "Established feedback processes and agile development cycles for continuous improvement.",
+        "Selected and onboarded new team members while creating comprehensive documentation.",
+        "Built cross-functional partnerships between engineering, product, and business stakeholders."
+      ]
+    },
+    {
+      "title": "Strategic Planning & Execution",
+      "bullets": [
+        "Researched market opportunities increasing potential revenue by 30% through strategic partnerships.",
+        "Defined product roadmaps and marketing strategies identifying key promotion channels.",
+        "Optimized project budgets by 3 months while maintaining quality and user satisfaction.",
+        "Completed startup accelerator program, winning Best SaaS Award with $10,000 grant."
+      ]
+    },
+    {
+      "title": "Process Improvement & Operations",
+      "bullets": [
+        "Reduced user registration time from 10 minutes to 1 minute through UX improvements.",
+        "Minimized incidents at launch reducing support calls through proactive quality measures.",
+        "Proposed infrastructure changes lowering maintenance costs and improving change velocity.",
+        "Built SOA integration framework reducing development time from 1 month to 1.5 weeks."
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Mvideo",
+      "dates": "06/2022 - Present",
+      "duration": "2 years",
+      "company_desc": "Leading retail company specializing in electronics and household appliances.",
+      "company_url": "https://mvideo.ru",
+      "role": "Tech Lead / Senior Developer",
+      "employment": "Full-time",
+      "bullets": [
+        "Led cross-functional team developing unified platform for 40,000 stores and 160,000 users.",
+        "Coordinated with product, design, and business teams to define feature requirements and priorities.",
+        "Drove stakeholder alignment on KPI tracking and performance management features.",
+        "Managed complex SAP integration project ensuring smooth data migration across enterprise systems."
+      ],
+      "technologies": "Scala, Java, PostgreSQL, Docker, REST API, Kubernetes (k8s), SAP"
+    },
+    {
+      "company": "EEG",
+      "dates": "07/2021 - 06/2023",
+      "duration": "2 years",
+      "company_desc": "Full-stack esports and online gambling company fueled by video gaming growth.",
+      "company_url": "https://www.eegpartners.com/",
+      "role": "Senior Developer / Tech Lead",
+      "employment": "Full-time",
+      "bullets": [
+        "Drove development of gambling platform from prototype to production ensuring compliance.",
+        "Minimized launch incidents and reduced support calls through proactive quality measures.",
+        "Improved user experience reducing registration time from 10 minutes to 1 minute.",
+        "Proposed infrastructure improvements lowering maintenance costs and improving team velocity."
+      ],
+      "technologies": "Scala, Akka, Kubernetes (k8s), PostgreSQL"
+    },
+    {
+      "company": "Tawasal",
+      "dates": "02/2020 - 06/2021",
+      "duration": "2 years",
+      "company_desc": "Popular messenger in the UAE and super app for rentals, food, and tickets.",
+      "company_url": "https://tawasal.ae/",
+      "role": "Senior Developer / Team Lead",
+      "employment": "Full-time",
+      "bullets": [
+        "Led architecture decisions for high-load messenger serving 100,000+ users.",
+        "Selected and mentored new team members, creating essential documentation for knowledge transfer.",
+        "Built integration framework reducing cross-team development time from 1 month to 1.5 weeks.",
+        "Researched and advocated for distributed cloud architecture reducing costs by 50%."
+      ],
+      "technologies": "ZIO, Akka, F#, Nix, C++"
+    },
+    {
+      "company": "Yzer",
+      "dates": "08/2019 - 09/2020",
+      "duration": "1 year",
+      "company_desc": "Viral messenger in the UAE with automatic message translation features.",
+      "company_url": "https://appadvice.com/app/yzerchat-chat-and-video-calls/1398177737",
+      "role": "Senior Consultant",
+      "employment": "Part-time",
+      "bullets": [
+        "Consulted on development strategy and modeled critical application modules.",
+        "Influenced scaling architecture optimizing project budget by 3 months.",
+        "Built performance visualization tools improving bottleneck identification by 50%.",
+        "Sustained platform growth to 56,000 daily active users through strategic technical decisions."
+      ],
+      "technologies": "Scala, Java, Protobuf, Rust, WebAssembly"
+    },
+    {
+      "company": "Buro",
+      "dates": "01/2017 - 12/2018",
+      "duration": "2 years",
+      "company_desc": "SaaS for incorporation C-corp and LLC with bank integration.",
+      "company_url": "https://buro.app",
+      "role": "Co-founder, CTO",
+      "employment": "Full-time",
+      "bullets": [
+        "Founded and led technical strategy for B2B SaaS startup in legal tech space.",
+        "Recruited and mentored team of 7 developers, increasing completion speed by 35%.",
+        "Built system processing 500 incorporation requests per day with bank integrations.",
+        "Developed fraud detection system reducing document validation from 2 hours to 5 minutes."
+      ],
+      "technologies": "Kotlin, Java, Spring, Spark, Thrift, Kafka, PostgreSQL"
+    },
+    {
+      "company": "Minority",
+      "dates": "12/2015 - 12/2016",
+      "duration": "1 year",
+      "company_desc": "Workflow management platform for describing daily activities and automating routine tasks.",
+      "company_url": "https://minorityapp.com/",
+      "role": "Co-founder, CEO",
+      "employment": "Full-time",
+      "bullets": [
+        "Founded and led startup from ideation through accelerator program to market.",
+        "Researched market opportunities increasing potential revenue 30% through strategic partnerships.",
+        "Built marketing strategy and identified key promotion channels for B2B SaaS.",
+        "Won Best SaaS Award with $10,000 grant, completing startup accelerator program."
+      ],
+      "technologies": "Java, Spring, Hibernate, PostgreSQL, Redis"
+    }
+  ],
+  "education": {
+    "dates": "09/2011 - 05/2017",
+    "school": "Saint Petersburg State University (SPbU)",
+    "degree": "M.Sc. in Computer Science"
+  },
+  "extras": {
+    "hobbies": ""
+  }
+}

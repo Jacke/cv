@@ -68,7 +68,7 @@ def handle_apply(args: argparse.Namespace) -> int:
         raise SystemExit("Structured CV data must be a JSON object.")
 
     # Build replacements
-    replacements = build_replacements(data)
+    replacements = build_replacements(data, lang=args.lang)
     payload = {"replacements": replacements}
 
     should_log = bool(args.out or args.doc)
@@ -227,6 +227,12 @@ def main(argv: list[str]) -> int:
     )
 
     # Options
+    parser.add_argument(
+        "--lang",
+        choices=["en", "ru"],
+        default="en",
+        help="Language for labels (default: en)"
+    )
     parser.add_argument(
         "--match-case",
         action="store_true",
